@@ -3,9 +3,9 @@ namespace Triangles {
 
   class Triangle
   {
-    public int FirstSide;
-    public int SecondSide;
-    public int ThirdSide;
+    private int FirstSide;
+    private int SecondSide;
+    private int ThirdSide;
 
     public Triangle(int firstSide, int secondSide, int thirdSide)
     {
@@ -13,18 +13,7 @@ namespace Triangles {
       SecondSide = secondSide;
       ThirdSide = thirdSide;
     }
-    public int GetFirstSide()
-    {
-      return FirstSide;
-    }
-    public int GetSecondSide()
-    {
-      return SecondSide;
-    }
-    public int GetThirdSide()
-    {
-      return ThirdSide;
-    }
+    
     public bool NotTriangle(int FirstSide, int SecondSide, int ThirdSide)
     {
       return((FirstSide + SecondSide <= ThirdSide)||
